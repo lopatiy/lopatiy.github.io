@@ -1,0 +1,39 @@
+#me .circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: url('../img/me.jpg');
+    border: 2px solid var(--text);
+    background-size: cover;
+    margin: 100px auto;
+}
+
+#me .dashed:after {
+    content: '|';
+    position: relative;
+    animation: blink-animation 1s steps(5,start) infinite;
+    -webkit-animation: blink-animation 1s steps(5,start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+#me .icons {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1em;
+}
+
+#me .footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    border-top: 2px solid var(--text);
+}

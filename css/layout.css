@@ -1,0 +1,49 @@
+:root {
+    --bg: #313131;
+    --text: white;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+    font-family: 'VT323', monospace;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content {
+    width: calc(100% + 20px);
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.content div {
+    margin: auto;
+    width: 800px;
+}
+
+.content p {
+    font-size: 1.5em;
+}
+
+aside a {
+    display: block;
+    margin-bottom: 50px;
+    text-align: right;
+}
+
+.content > div {
+    min-height: 100%;
+    position: relative;
+}
+
+

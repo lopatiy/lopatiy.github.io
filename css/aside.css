@@ -1,0 +1,19 @@
+aside {
+    height: 100%;
+    padding: 20px;
+    width: 150px;
+    position: fixed;
+    top:0;
+    right: 0;
+}
+
+a {
+    color: var(--text);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+a span {
+    float: left;
+}
