@@ -26,9 +26,8 @@ h1 {
     overflow-y: scroll;
 }
 
-.content div {
+.content > div {
     margin: auto;
-    width: 800px;
 }
 
 .content p {

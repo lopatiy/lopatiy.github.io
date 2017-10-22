@@ -1,3 +1,7 @@
+#me {
+    width: 800px;
+}
+
 #me .circle{
     width: 200px;
     height: 200px;
@@ -36,4 +40,5 @@
     bottom: 0;
     height: 100px;
     border-top: 2px solid var(--text);
+    width: 100%;
 }
