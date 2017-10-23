@@ -43,8 +43,8 @@
     width: 100%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     #me {
-        width: 400px;
+        width: 100%;
     }
 }

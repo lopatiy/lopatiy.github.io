@@ -10,6 +10,7 @@
     min-height: 300px;
     border: 1px solid white;
     padding: 15px;
+    margin-bottom: 15px;
 }
 
 .card img {
@@ -24,12 +25,12 @@
     float: right;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     #cases {
-        width: 400px;
+        width: 100%;
     }
 
     .card {
-        width: 350px;
+        width: 90%;
     }
 }
