@@ -42,3 +42,9 @@
     border-top: 2px solid var(--text);
     width: 100%;
 }
+
+@media (max-width: 500px) {
+    #me {
+        width: 400px;
+    }
+}
