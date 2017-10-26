@@ -14,7 +14,7 @@ a {
     font-size: 2em;
 }
 
-a span {
+a > span {
     float: left;
 }
 

@@ -6,17 +6,35 @@
 .card {
     display: inline-block;
     vertical-align: top;
-    width: 300px;
+    width: 260px;
     min-height: 300px;
     border: 1px solid white;
     padding: 15px;
     margin-bottom: 15px;
+    margin-right: 15px;
+    float: left;
 }
 
-.card img {
+.card.w2{
+    width: 520px;
+}
+
+.card img,
+.card .embedded{
+    text-transform: none;
     border: 1px solid white;
     width: 100%;
     height: 100%;
+    min-height: 200px;
+}
+
+.card .embedded.black-white{
+    color: black;
+    background: white;
+}
+
+.card .embedded.centered{
+    text-align: center;
 }
 
 .card .description{
@@ -30,7 +48,8 @@
         width: 100%;
     }
 
-    .card {
+    .card,
+    .card.w2 {
         width: 90%;
     }
 }

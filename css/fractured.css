@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+}
+
+.fractured {
+    font-family: arial;
+    line-height: 250px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.2em;
+    position: relative;
+    animation: flash 2s infinite ease-out;
+    text-shadow: 1px 1px 10px black;
+}
+
+@media (max-width: 600px) {
+    .fractured {
+        font-size:1.3em;
+    }
+}
+
+
+.fractured:before,
+.fractured:after {
+    color: rgba(0,0,0,0.7);
+    content: attr(data-text);
+    display: inline-block;
+    position: absolute;
+    text-shadow:none;
+    left: 0;
+}
+
+.fractured:before{
+    clip-path: polygon(0 70%, 0 100%, 100% 100%, 100% 30%);
+    animation: slide-reverse 2s infinite cubic-bezier(0, 0, 0.04, 0.95);
+}
+
+.fractured:after {
+    clip-path: polygon(0 0, 0 69%, 100% 29%, 100% 0%);
+    animation: slide 2s infinite cubic-bezier(0, 0, 0.04, 0.95);
+}
+
+@keyframes flash {
+    0% {text-shadow: 1px 1px 10px black;}
+    100% {text-shadow: 1px 1px 20px black;}
+}
+
+@keyframes slide {
+    0% {transform: translate(0,0)}
+    100% {transform: translate(-20px,3px); opacity: 0;}
+}
+
+@keyframes slide-reverse {
+    0% {transform: translate(0,0)}
+    100% {transform: translate(20px,3px); opacity: 0}
+}
