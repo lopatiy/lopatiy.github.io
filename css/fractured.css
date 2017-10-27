@@ -4,10 +4,11 @@ body {
 
 .fractured {
     font-family: arial;
-    line-height: 250px;
+    display: inline-block;
+    margin-top: 90px;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 2.2em;
+    font-size: 1.5em;
     position: relative;
     animation: flash 2s infinite ease-out;
     text-shadow: 1px 1px 10px black;
@@ -19,10 +20,9 @@ body {
     }
 }
 
-
 .fractured:before,
 .fractured:after {
-    color: rgba(0,0,0,0.7);
+    color: rgba(0,0,0,0.4);
     content: attr(data-text);
     display: inline-block;
     position: absolute;
@@ -31,26 +31,20 @@ body {
 }
 
 .fractured:before{
-    clip-path: polygon(0 70%, 0 100%, 100% 100%, 100% 30%);
+    clip-path: polygon(0 calc(100% - 20px), 0 100%, 100% 100%, 100% 20px);
     animation: slide-reverse 2s infinite cubic-bezier(0, 0, 0.04, 0.95);
 }
 
 .fractured:after {
-    clip-path: polygon(0 0, 0 69%, 100% 29%, 100% 0%);
+    clip-path: polygon(0 0, 0 calc(100% - 20px), 100% 20px, 100% 0);
     animation: slide 2s infinite cubic-bezier(0, 0, 0.04, 0.95);
 }
-
-@keyframes flash {
-    0% {text-shadow: 1px 1px 10px black;}
-    100% {text-shadow: 1px 1px 20px black;}
-}
-
 @keyframes slide {
-    0% {transform: translate(0,0)}
-    100% {transform: translate(-20px,3px); opacity: 0;}
+    0% {transform: translate(0,0); text-shadow: 1px 1px 10px black;}
+    100% {transform: translate(-40px,3px); opacity: 0; text-shadow: 1px 1px 20px black;}
 }
 
 @keyframes slide-reverse {
-    0% {transform: translate(0,0)}
-    100% {transform: translate(20px,3px); opacity: 0}
+    0% {transform: translate(0,0); text-shadow: 1px 1px 10px black;}
+    100% {transform: translate(40px,3px); opacity: 0; text-shadow: 1px 1px 20px black;}
 }

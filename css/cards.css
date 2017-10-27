@@ -28,9 +28,14 @@
     min-height: 200px;
 }
 
-.card .embedded.black-white{
-    color: black;
+.card .embedded.white-black{
     background: white;
+    color: black;
+}
+
+.card .embedded.black-white{
+    background: black;
+    color: white;
 }
 
 .card .embedded.centered{
