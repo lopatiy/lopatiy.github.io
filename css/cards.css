@@ -28,6 +28,10 @@
     min-height: 200px;
 }
 
+.card .label {
+    text-align: left;
+}
+
 .card .embedded.white-black{
     background: white;
     color: black;
