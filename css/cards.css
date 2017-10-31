@@ -32,6 +32,11 @@
     text-align: left;
 }
 
+.card .date{
+    font-size: .5em;
+    text-align: right;
+}
+
 .card .embedded.white-black{
     background: white;
     color: black;
@@ -50,6 +55,7 @@
     display: block;
     font-size: .5em;
     float: right;
+    text-align: right;
 }
 
 @media (max-width: 600px) {
